@@ -168,3 +168,39 @@ if(condicion){
 
 }
 
+
+const score = 50;
+let result = '';
+
+switch (score) {
+    case 50:
+        result = 'F'
+        break
+    case 50:
+        result = 'D'
+        break
+    default:
+        result ='N/A'
+}
+
+console.log(result)
+
+const pais = 'usd';
+const tipoCambio = 0;
+
+switch(pais){
+    case 'usd':
+        tipoCambio = 10;
+        break
+    case 'euro':
+        tipoCambio = 20;
+}
+
+
+switch(embarque){
+    case 'maritimo':
+        asda
+        break
+    case 'aereo':
+        tipoCambio = 20;
+}
