@@ -80,4 +80,7 @@ const sumaArrow = (n1, n2) => {
 
 const sumaInLine = (n1, n2) => n1 + n2;
 
+const concat = (nombre) => 'hola' + nombre
+
 console.log(sumaInLine(5,5))
+console.log(concat('freddy'))
