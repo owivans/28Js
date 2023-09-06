@@ -310,5 +310,17 @@ while(counter < CAPACITY){
 
 const
 
-
+const fibonacci = (number) => {
+    let number1= 0
+    let number2 = 1
+    let nextNumber = 0
+    for(let index = 0; index < number ; index++ ) {
+        console.log(number1)
+        nextNumber= number1 + number2
+        number1 = number2
+        number2 = nextNumber
+        }
+        return number1
+    }
+console.log(fibonacci(10))
 
