@@ -50,61 +50,39 @@ listNames.forEach((item) => {
 // NO USAR innerHTML!!!!!!!!!!
 //document.body.innerHTML = '<div><span>hola</span><h1>asdasd</h1></div>'
 
--Mostrar en el dom una lista de canciones con toda la info disponible
+//-Mostrar en el dom una lista de canciones con toda la info disponible
 
-let songsData = [
-    {
-      name: "Kashmir",
-      band: "Led Zeppelin",
-      releaseYear: "1980",
-      statistics: {
-        likes: 20000,
-        reproductions: 8000,
+const playlist = {
+    name: "Mis Canciones Favoritas",
+    description: "Una selección de mis canciones favoritas de diferentes géneros",
+    songs: [
+      {
+        title: "Shape of You",
+        artist: "Ed Sheeran",
+        album: "÷ (Deluxe)",
+        duration: "3:53",
+        album_cover: "https://i.scdn.co/image/ab67616d0000b273a0aea3805ed6a87aa394c796"
       },
-    },
-    {
-      name: "Smells Like Teen Spirit",
-      band: "Nirvana",
-      releaseYear: "1989",
-      statistics: {
-        likes: 25000,
-        reproductions: 100000,
+      {
+        title: "Bohemian Rhapsody",
+        artist: "Queen",
+        album: "A Night at the Opera",
+        duration: "5:54",
+        album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Bohemian_Rhapsody_music_video_still.png/220px-Bohemian_Rhapsody_music_video_still.png"
       },
-    },
-    {
-      name: "So What",
-      band: "Metallica",
-      releaseYear: "1990",
-      statistics: {
-        likes: 12000,
-        reproductions: 95000,
+      {
+        title: "Blinding Lights",
+        artist: "The Weeknd",
+        album: "After Hours",
+        duration: "3:20",
+        album_cover: "https://www.plymouthsouth.com/wp-content/uploads/2020/04/After-Hours-pic-900x900.jpg"
       },
-    },
-    {
-      name: "Nothing Else Matters",
-      band: "Metallica",
-      releaseYear: "1992",
-      statistics: {
-        likes: 128000,
-        reproductions: 915000,
-      },
-    },
-    {
-      name: "Daze",
-      band: "Poets_of_the_Fall",
-      releaseYear: "2014",
-      statistics: {
-        likes: 3548413,
-        reproductions: 87095138,
-      },
-    },
-    {
-      name: "The Sweet Scape",
-      band: "Poets_of_the_Fall",
-      releaseYear: "2018",
-      statistics: {
-        likes: 26268856,
-        reproductions: 2424568,
-      },
-    },
-  ];
+      {
+        title: "Don't Start Now",
+        artist: "Dua Lipa",
+        album: "Future Nostalgia",
+        duration: "3:03",
+        album_cover: "https://ss365.liverpool.com.mx/xl/1095757037.jpg"
+      }
+    ]
+  };
