@@ -97,10 +97,10 @@ const playlist = {
 
   //renderList(playlist)
   const button = document.querySelector('button');
-console.log(button);
-button.addEventListener('click', (event) => {
-  console.log(event)
-});
+  console.log(button);
+  button.addEventListener('click', (event) => {
+    console.log(event)
+  });
 
 document.addEventListener('scroll', (event) => {
   console.log(event)
