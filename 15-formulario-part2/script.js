@@ -26,6 +26,7 @@ const renderPersona = (infoPersona, index) => {
     container.appendChild(li);
 };
 
+
 const renderList = (listToRender) => {
     console.log(listToRender)
     listToRender.forEach(( persona, index ) => {
@@ -54,3 +55,36 @@ enviar.addEventListener('click', () => {
     renderList(listPerson);
 });
 
+
+const URL_API ='https://rickandmortyapi.com/api/episode';
+// then / catch
+// const response = fetch('https://rickandmortyapi.com/api/episode',{
+//     method: 'GET'
+// }).then((response) => response.json())
+// .then((json) => console.log(json))
+// .catch((error) => {
+//     console.log(error)
+// });
+
+
+// Async / await
+// try / catch
+
+const getInfo = async() => {
+    try {
+        // codigo que se ejecutara por default
+        const response = await fetch(URL_API);
+        console.log(response)
+        if(response.status !== 201){
+            const parsed = await response.json();
+            console.log(parsed)
+        }
+        
+        // throw new Error('este es un eror en el try')
+    } catch (error) {
+        // codigo a ejecutarse cuando hay un error
+        console.error(error, 'xxxx')
+    }
+};
+
+getInfo()
