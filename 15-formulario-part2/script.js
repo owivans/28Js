@@ -73,7 +73,8 @@ const URL_API ='https://rickandmortyapi.com/api/episode';
 const getInfo = async() => {
     try {
         // codigo que se ejecutara por default
-        const response = await fetch(URL_API);
+        const url = URL_API + '.json'
+        const response = await fetch(url);
         console.log(response)
         if(response.status !== 201){
             const parsed = await response.json();

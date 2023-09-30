@@ -25,7 +25,7 @@ const getInfoApi = async(url) => {
     }
     
 };
-//getInfoApi(URL_API);
+getInfoApi(URL_API);
 
 const URL_FIREBASE = 'https://js-4ecd3-default-rtdb.firebaseio.com/.json';
 
